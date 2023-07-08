@@ -1,42 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap')
-
-html 
-  box-sizing: border-box
-
-*,
-*:before,
-*:after
-  box-sizing: inherit
-html
-  font-size: 10px
-  font-family: 'Poppins', sans-serif
-
-body,
-body * 
-  padding: 0
-  margin: 0
-  font-size: 1.5rem
-
-li
-  list-style: none
-
-h1
-  font-size: 4.5rem
-h2
-  font-size: 2.5rem
-
 body
-  margin: 2rem
+  max-width: 90% !important
+
+ul
+  list-style: none
+  padding: 0
+  
+header
+  margin-bottom: 2rem
 
 main
   display: flex
+  justify-content: space-between
 
   .cards-wrapper
     display: grid
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+    grid-template-columns: repeat(5, 1fr)
 
-    .card
-      max-width: 15rem
-      min-height: 20rem
-
-      border: 1px solid black
+  .card
+    width: 13rem
+    height: 18rem
+    border: 1px solid white
